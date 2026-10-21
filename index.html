@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Learning About Bootstrap</title>
+  </head>
+
+  <body>
+    <main>
+      <header class="site-header">
+        <nav class="container">
+          <div class="row align-items-center">
+            <div class="col-9 col-lg-3">
+              <a class="brand">
+                <img src="./assests/img/logo.png" alt="" class="logo" />
+                <span class="logo-text">blinqpay</span>
+              </a>
+            </div>
+
+            <div class="col-lg-6 d-none d-lg-block">
+              <ul class="nav justify-content-center">
+                <li>
+                  <a class="nav-link">Products</a>
+                </li>
+                <li>
+                  <a class="nav-link">Developers</a>
+                </li>
+                <li>
+                  <a class="nav-link">Company</a>
+                </li>
+                <li>
+                  <a class="nav-link">Pricing</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-3 col-lg-3">
+              <div class="right-menu">
+                <button
+                  class="menu-toggle d-block d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#mobileMenu"
+                  aria-controls="mobileMenu"
+                >
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  >
+                    <path d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+
+                <ul class="nav justify-content-end d-none d-lg-flex">
+                  <li>
+                    <a class="nav-link">Support</a>
+                  </li>
+                  <li>
+                    <a class="nav-link sign-in">Sign in</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div
+          class="offcanvas offcanvas-end bg-white text-dark"
+          tabindex="-1"
+          id="mobileMenu"
+        >
+          <div class="offcanvas-header border-bottom">
+            <h5 class="fw-bold">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+            ></button>
+          </div>
+          <div class="offcanvas-body d-flex flex-column">
+            <ul class="nav flex-column mb-auto">
+              <li>
+                <a class="nav-link">Products</a>
+              </li>
+              <li>
+                <a class="nav-link">Developers</a>
+              </li>
+              <li><a class="nav-link">Company</a></li>
+              <li><a class="nav-link">Pricing</a></li>
+              <li><a class="nav-link">Support</a></li>
+            </ul>
+            <a class="sign-in d-inline-block text-center mt-3">Sign in</a>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-5">
+              <div class="hero-text">
+                <h1>Get Your Payment Faster</h1>
+
+                <p>
+                  Blinqpay helps businesses in Africa get paid by anyone,
+                  anywhere in the world.
+                </p>
+
+                <button type="button">Start Now</button>
+              </div>
+
+              <div class="hero-logos d-flex d-lg-none">
+                <img src="./assests/img/unknown.png" alt="Unknown" />
+                <img src="./assests/img/avengers.png" alt="Avengers" />
+                <img src="./assests/img/etsy.png" alt="Etsy" />
+                <img src="./assests/img/linkedin.png" alt="LinkedIn" />
+                <img src="./assests/img/tiktok.png" alt="TikTok" />
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="dashboard-wrapper">
+                <img
+                  class="dashboard"
+                  src="./assests/img/pc-laptop.png"
+                  alt="Blinqpay payment dashboard"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="community-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+              <div class="feature-grid">
+                <article class="feature-card feature-card-one">
+                  <div class="feature-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8z"
+                      />
+                    </svg>
+                  </div>
+                  <h3>Easy Access</h3>
+                  <p>Now track all of your transaction easily.</p>
+                </article>
+
+                <article class="feature-card feature-card-two">
+                  <div class="feature-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect x="4" y="5" width="16" height="14" rx="2" />
+                      <path d="M4 9h16M8 14h3M8 16h6" />
+                    </svg>
+                  </div>
+                  <h3>Cashflow Visibility</h3>
+                  <p>Now track all of your transaction easily.</p>
+                </article>
+
+                <article class="feature-card feature-card-three">
+                  <div class="feature-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M4 17l6-6 4 3 6-8" />
+                      <path d="M15 6h5v5" />
+                    </svg>
+                  </div>
+                  <h3>Use You Connect</h3>
+                  <p>Now track all of your transaction easily.</p>
+                </article>
+
+                <article class="feature-card feature-card-four">
+                  <div class="feature-icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect x="5" y="4" width="14" height="16" rx="2" />
+                      <path d="M9 8h6M9 12h6M9 16h3" />
+                    </svg>
+                  </div>
+                  <h3>Manage Invoicing</h3>
+                  <p>Now track all of your transaction easily.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+              <div class="community-content">
+                <span class="community-decoration"></span>
+
+                <h2>
+                  Make &amp; Share<br />
+                  <span>Payments</span> With<br />
+                  Community
+                </h2>
+
+                <p>
+                  Have seamless access to your payments and manage your
+                  transactions easily, all in one place.
+                </p>
+
+                <a href="#" class="community-link">
+                  Learn more
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
