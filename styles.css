@@ -218,6 +218,36 @@ body {
   justify-content: flex-end;
   padding-right: 8px;
 }
+a{
+  text-decoration: none;
+}
+footer ul{
+  list-style:none;
+  padding-left:0;
+}
+footer{
+  background-color: #210933;
+  color:white;
+  padding: 40px;
+}
+.footer{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer li{
+  font-weight: 200;
+  margin-left:0;
+}
+.social-icons{
+  display:flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.social-icons img{
+  width: 20px;
+  
+}
 
 .why-us {
   position: relative;
