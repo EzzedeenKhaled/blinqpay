@@ -435,10 +435,11 @@ main {
 .testimonials {
   position: relative;
   min-height: 996px;
-  margin-top: -95.53px;
-  padding-top: 165px;
+  padding-top: 400px;
   overflow: hidden;
   color: white;
+  background: url("./assests/design/imgRectangle5.svg") center top / 100% 100%
+    no-repeat;
 }
 .testimonial-layout {
   display: grid;
@@ -623,54 +624,7 @@ footer {
   outline: 3px solid #00b5d0;
   outline-offset: 5px;
 }
-dialog {
-  width: min(440px, calc(100% - 36px));
-  padding: 36px;
-  border: 0;
-  border-radius: 12px;
-  color: var(--muted);
-  box-shadow: 0 25px 100px #21093344;
-}
-dialog::backdrop {
-  background: #21093399;
-}
-dialog h2 {
-  font-size: 26px;
-  letter-spacing: 0;
-  color: var(--purple);
-  padding-right: 15px;
-}
-dialog p {
-  margin-top: 14px;
-  font-size: 15px;
-}
-.dialog-close {
-  position: absolute;
-  top: 8px;
-  right: 14px;
-  border: 0;
-  background: none;
-  font-size: 30px;
-  color: var(--purple);
-}
-dialog label {
-  display: block;
-  margin: 24px 0 8px;
-  font-weight: 700;
-}
-dialog input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #c8bdcc;
-  border-radius: 4px;
-  margin-bottom: 18px;
-}
-dialog form .button {
-  width: 100%;
-}
-.form-status {
-  color: var(--purple);
-}
+
 @media (min-width: 1501px) {
   main {
     --hero-height: 53.33vw;
