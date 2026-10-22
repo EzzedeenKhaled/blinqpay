@@ -1297,3 +1297,22 @@ footer {
 .testimonial-portraits .avatar:not(.avatar-main) {
   cursor: pointer;
 }
+.slide-left,
+.slide-right {
+  opacity: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.slide-left {
+  transform: translateX(-100px);
+}
+
+.slide-right {
+  transform: translateX(100px);
+}
+
+.slide-left.show,
+.slide-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}

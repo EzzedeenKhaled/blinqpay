@@ -79,3 +79,23 @@ avatars.forEach((avatar) => {
     testimonials[index] = currentTestimonial;
   });
 });
+const animatedElements = document.querySelectorAll(
+  ".slide-left, .slide-right"
+);
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
+  },
+  {
+    threshold: 0.2
+  }
+);
+
+animatedElements.forEach((element) => {
+  observer.observe(element);
+});
