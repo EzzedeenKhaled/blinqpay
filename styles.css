@@ -250,6 +250,7 @@ main {
   box-shadow: 7px 10px 50px #e8e2f0;
   border-radius: 4px;
 }
+
 .feature-card:before {
   content: "";
   position: absolute;
@@ -1283,4 +1284,16 @@ footer {
   * {
     transition: none !important;
   }
+}
+
+.feature-card:hover {
+  transform: scale(1.03);
+}
+
+.feature-card:nth-child(even):hover {
+  transform: translateY(-60px) scale(1.03);
+}
+
+.testimonial-portraits .avatar:not(.avatar-main) {
+  cursor: pointer;
 }
