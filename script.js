@@ -99,3 +99,36 @@ const observer = new IntersectionObserver(
 animatedElements.forEach((element) => {
   observer.observe(element);
 });
+
+
+
+
+const logoImages =[
+  "./assests/design/imgGroup.svg",
+  "./assests/design/imgTheAvengers1.svg",
+  "./assests/design/imgEtsy.svg",
+  "./assests/design/imgLinkedinIcon1.svg",
+  "./assests/design/imgTiktokLogo.svg"
+];
+
+const logos = document.querySelectorAll(".brand");
+
+let startIndex = 0;
+
+function changeLogos() {
+  logos.forEach((logo, index) => {
+    const imageIndex = (startIndex + index) % logoImages.length;
+
+    logo.src = logoImages[imageIndex];
+  });
+
+  startIndex++;
+
+  if (startIndex >= logoImages.length) {
+    startIndex = 0;
+  }
+}
+
+changeLogos();
+
+setInterval(changeLogos, 1000);
