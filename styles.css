@@ -1300,7 +1300,9 @@ footer {
 .slide-left,
 .slide-right {
   opacity: 0;
-  transition: transform 0.8s ease, opacity 0.8s ease;
+  transition:
+    transform 0.8s ease,
+    opacity 0.8s ease;
 }
 
 .slide-left {
@@ -1315,4 +1317,47 @@ footer {
 .slide-right.show {
   opacity: 1;
   transform: translateX(0);
+}
+
+@media (max-width: 650px) {
+  .mobile-partners {
+    display: block;
+    position: absolute;
+    top: 348px;
+    left: 15px;
+    width: calc(100% - 30px);
+    overflow: hidden;
+  }
+
+  .partners-track {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    width: max-content;
+    animation: partners-scroll 12s linear infinite;
+  }
+
+  .partners-track img {
+    display: block;
+    flex: 0 0 auto;
+    width: auto;
+    max-height: 13.451px;
+    filter: grayscale(1);
+    opacity: 0.7;
+  }
+
+  @keyframes partners-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .partners-track {
+      animation: none;
+    }
+  }
 }
